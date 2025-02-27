@@ -1,7 +1,7 @@
 NACLUSTERS="spinboro aruba"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 ONTAP_STD_ARGS="set -units B; set -showseparator \"#\"; set -showallfields true"
-HOME="/home/cmoreira/Projects/netapp-scripts"
+NTAPHOME="/home/cmoreira/Projects/netapp-scripts"
 OUTPUTFILE="/tmp/na_interestingmsgs.$$"
 ERRORCODE=0
 MAILTO="cmoreira@misfirm.com"
