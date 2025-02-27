@@ -56,7 +56,7 @@ do
     EPSILONCOUNT=`awk -F# -v epsilon=${EPSILON} '$epsilon=="true" {print}' ${CLUSTERSHOW} |wc -l`
 
     case ${NACLUSTER} in
-	na-cluster1|na-cluster3|na-cluster4) # Clusters with 2 nodes
+	spinboro|aruba) # Clusters with 2 nodes
 		if [ "x$[NODESFOUND]x" = "x2x" ]; then
 		    log "   ${NACLUSTER}: Expected number of nodes found."
 
@@ -79,30 +79,6 @@ do
 		    ERRORCOUNT=`expr ${ERRORCOUNT} + 1`
                     echo "   WARNING:${NACLUSTER}: Unexpected number of nodes found: ${NODESFOUND}" >> ${REPORTFILE}
 		fi
-		;;
-	na-cluster2) # Clusters with 4 nodes
-                if [ "x$[NODESFOUND]x" = "x4x" ]; then
-                    log "   ${NACLUSTER}: Expected number of nodes found."
-
-                    if [ "x$[NODESFOUND]x" = "x${HEALTHYNODES}x" ]; then
-                        log "   ${NACLUSTER}: All cluster nodes healthy"
-
-                        if [ "x${EPSILONCOUNT}x" = "x1x" ]; then
-                             log "   ${NACLUSTER}: Expected epsilon count"
-                        else
-                             ERRORCOUNT=`expr ${ERRORCOUNT} + 1`
-                             echo "   WARNING:${NACLUSTER} has unexpected epsilon count: ${EPSILONCOUNT}" >> ${REPORTFILE}
-                        fi
-
-                    else
-                        ERRORCOUNT=`expr ${ERRORCOUNT} + 1`
-                        echo "   WARNING:Unhealthy cluster nodes found:" >> ${REPORTFILE}
-                    fi
-
-                else
-                    ERRORCOUNT=`expr ${ERRORCOUNT} + 1`
-                    echo "   WARNING:${NACLUSTER}: Unexpected number of nodes found: ${NODESFOUND}" >> ${REPORTFILE}
-                fi
 		;;
  	*)
 		ERRORCOUNT=`expr ${ERRORCOUNT} + 1`
