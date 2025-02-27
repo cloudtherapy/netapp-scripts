@@ -2,7 +2,7 @@
 # na_snapmirror-chk.sh : 
 #
 
-NACLUSTERS="na-cluster1 na-cluster2 na-cluster3 na-cluster4"
+NACLUSTERS="spinboro aruba"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 TMPFILE=/tmp/na_snapmirror-chk.tmp.$$
 PROBLEMS=/tmp/na_snapmirror-chk.problems.$$

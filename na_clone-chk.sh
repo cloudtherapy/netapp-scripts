@@ -2,7 +2,7 @@
 # na_clone-chk.sh : Report on flexclone volumes
 #
 
-NACLUSTERS="na-cluster1 na-cluster2 na-cluster3 na-cluster4"
+NACLUSTERS="spinboro aruba"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 TMPFILE=/tmp/na_clone-chk.tmp.$$
 CLONES=/tmp/na_clone-chk.clones.$$

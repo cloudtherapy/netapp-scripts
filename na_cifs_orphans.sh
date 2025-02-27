@@ -10,7 +10,7 @@
 #
 # CHANGELOG:
 #
-NACLUSTERS="na-cluster1 na-cluster2 na-cluster3 na-cluster4"
+NACLUSTERS="spinboro aruba"
 # CIFSEXCLUDE : Ignore default ADMIN shares etc + SVMs we don't care about + Chop header
 CIFSEXCLUDE='#admin\$#|#/\.admin#|^SVM_I_DONT_CARE_ABOUT|#c\$#|#ipc\$#|vserver#share'
 SSHCMD='ssh -n -o Batchmode=yes -o LogLevel=ERROR'

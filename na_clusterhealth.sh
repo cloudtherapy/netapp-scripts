@@ -2,7 +2,7 @@
 # na_clusterhealth.sh : Checks NetApp cluster health
 #
 
-NACLUSTERS="na-cluster1 na-cluster2 na-cluster3 na-cluster4"
+NACLUSTERS="spinboro aruba"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 ONTAP_STD_ARGS="set -showseparator \"#\"; set -showallfields true"
 TMPFILE=/tmp/na_clusterhealth.tmp.$$

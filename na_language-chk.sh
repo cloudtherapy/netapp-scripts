@@ -2,7 +2,7 @@
 # na_language-chk.sh : Checks SVM and volumes for proper utf8mb8 language setting
 #
 
-NACLUSTERS="na-cluster1 na-cluster2 na-cluster3 na-cluster4"
+NACLUSTERS="spinboro aruba"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 TMPFILE=/tmp/na_baseline-chk.tmp.$$
 SVMLANG=/tmp/na_baseline-chk.svm-lang.$$

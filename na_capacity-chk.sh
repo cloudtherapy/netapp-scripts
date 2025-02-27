@@ -3,7 +3,7 @@
 #
 # CHANGELOG:   20230530 - For A400/A250 use size instead of logical-size for utilization  -Jky
 #
-NACLUSTERS="na-cluster1 na-cluster2 na-cluster3 na-cluster4"
+NACLUSTERS="spinboro aruba"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 TMPFILE=/tmp/na_capacity-chk.tmp.$$
 OVERFLOWED=/tmp/na_capacity-chk.overflow.$$
