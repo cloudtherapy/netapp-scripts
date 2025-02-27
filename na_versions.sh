@@ -2,8 +2,8 @@
 # na_versions.sh : Collect NetApp clusters ONTAP version
 #
 
-NACLUSTERS="spinboro aruba"
-SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
+. ./environment
+
 TMPFILE=/tmp/na_versions.tmp.$$
 REPORTFILE=/tmp/na_versions.report.$$
 ERRORCOUNT=0

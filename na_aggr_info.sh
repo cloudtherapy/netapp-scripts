@@ -6,9 +6,8 @@
 #    20200808 : Inception  -Jky
 #    20221118 : Add A400/A250  -Jky
 #
-NACLUSTERS="spinboro aruba"
-SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
-ONTAP_STD_ARGS="set -units B; set -showseparator \"#\"; set -showallfields true"
+. ./environment
+
 VOLLIST=/tmp/na_aggr_info.vols.$$
 AGGRINFO=/tmp/na_aggr_info.aggr.$$
 AGGRLIST=/tmp/na_aggr_info.aggrlist$$

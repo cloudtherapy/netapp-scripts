@@ -2,8 +2,8 @@
 # na_unmount-chk.sh : 
 #
 
-NACLUSTERS="spinboro aruba"
-SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
+. ./environment
+
 TMPFILE=/tmp/na_unmount-chk.tmp.$$
 PROBLEMS=/tmp/na_unmount-chk.problems.$$
 # VOLEXCUDE : Pattern match to exclude root volumes as well as volumes belonging to cluster SVMs and any SVMs we don't care about

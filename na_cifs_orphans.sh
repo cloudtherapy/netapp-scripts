@@ -10,11 +10,10 @@
 #
 # CHANGELOG:
 #
-NACLUSTERS="spinboro aruba"
 # CIFSEXCLUDE : Ignore default ADMIN shares etc + SVMs we don't care about + Chop header
+. ./environment
+
 CIFSEXCLUDE='#admin\$#|#/\.admin#|^SVM_I_DONT_CARE_ABOUT|#c\$#|#ipc\$#|vserver#share'
-SSHCMD='ssh -n -o Batchmode=yes -o LogLevel=ERROR'
-ONTAP_STD_ARGS="set -units B; set -showseparator \"#\"; set -showallfields true"
 CIFSLIST=/tmp/na_cifs_orphans.cifs.$$
 VOLPATHS=/tmp/na_cifs_orphans.volpaths.$$
 TMPFILE=/tmp/na_cifs_orphans.tmp.$$

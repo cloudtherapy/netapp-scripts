@@ -3,8 +3,8 @@
 #
 # CHANGELOG:   20230530 - For A400/A250 use size instead of logical-size for utilization  -Jky
 #
-NACLUSTERS="spinboro aruba"
-SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
+. ./environment
+
 TMPFILE=/tmp/na_capacity-chk.tmp.$$
 OVERFLOWED=/tmp/na_capacity-chk.overflow.$$
 # VOLEXCUDE : Pattern match to exclude root volumes as well as volumes belonging to cluster SVMs and any SVMs we don't care about

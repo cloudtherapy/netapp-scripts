@@ -2,8 +2,8 @@
 # na_snapmirror-chk.sh : 
 #
 
-NACLUSTERS="spinboro aruba"
-SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
+. ./environment
+
 TMPFILE=/tmp/na_snapmirror-chk.tmp.$$
 PROBLEMS=/tmp/na_snapmirror-chk.problems.$$
 # VOLEXCUDE : Pattern match to exclude root volumes as well as volumes belonging to cluster SVMs and any SVMs we don't care about

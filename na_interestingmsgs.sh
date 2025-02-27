@@ -1,11 +1,7 @@
 #!/bin/sh
 # na_interestingmsgs.sh
 #
-HOME="/home/MYHOMEFOLDER/bin"
-OUTPUTFILE="/tmp/na_interestingmsgs.$$"
-ERRORCODE=0
-MAILTO="MY@EMAIL.COM"
-HOST=`hostname`
+. ./environment
 
 # Report on NetApp aggregate utilization
 ${HOME}/na_aggr_info.sh > ${OUTPUTFILE}

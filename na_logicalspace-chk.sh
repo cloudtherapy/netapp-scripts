@@ -2,8 +2,8 @@
 # na_logicalspace-chk.sh : Identifies volumes that do not have logical space reporting/enforcement enabled
 #
 
-NACLUSTERS="na-cluster1 na-cluster2"
-SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
+. ./environment
+
 TMPFILE=/tmp/na_logicalspace-chk.tmp.$$
 LOGSPACE_DISABLED=/tmp/na_logicalspace-chk.disabled.$$
 # VOLEXCUDE : Pattern match to exclude root volumes as well as volumes belonging to cluster SVMs and any SVMs we don't care about

@@ -2,9 +2,8 @@
 # na_clusterhealth.sh : Checks NetApp cluster health
 #
 
-NACLUSTERS="spinboro aruba"
-SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
-ONTAP_STD_ARGS="set -showseparator \"#\"; set -showallfields true"
+. ./environment
+
 TMPFILE=/tmp/na_clusterhealth.tmp.$$
 CLUSTERSHOW=/tmp/na_clusterhealth.clustershow.$$
 REPORTFILE=/tmp/na_clusterhealth.report.$$
