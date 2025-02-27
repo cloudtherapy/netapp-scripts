@@ -1,8 +1,8 @@
-export NACLUSTERS="spinboro aruba"
-export SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
-export ONTAP_STD_ARGS="set -units B; set -showseparator \"#\"; set -showallfields true"
-export NTAPHOME="/home/cmoreira/Projects/netapp-scripts"
-export OUTPUTFILE="/tmp/na_interestingmsgs.$$"
-export ERRORCODE=0
-export MAILTO="cmoreira@misfirm.com"
-export HOST=`hostname`
+NACLUSTERS="spinboro aruba"
+SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
+ONTAP_STD_ARGS="set -units B; set -showseparator \"#\"; set -showallfields true"
+NTAPHOME="/home/cmoreira/Projects/netapp-scripts"
+OUTPUTFILE="/tmp/na_interestingmsgs.$$"
+ERRORCODE=0
+MAILTO="cmoreira@misfirm.com"
+HOST=`hostname`
