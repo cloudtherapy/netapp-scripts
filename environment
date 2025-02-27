@@ -1,4 +1,4 @@
-NACLUSTERS=("spinboro" "aruba")
+NACLUSTERS="spinboro aruba"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 ONTAP_STD_ARGS="set -units B; set -showseparator \"#\"; set -showallfields true"
 NTAPHOME="/home/cmoreira/Projects/netapp-scripts"
