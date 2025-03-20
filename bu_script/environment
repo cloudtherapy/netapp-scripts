@@ -1,7 +1,7 @@
 NACLUSTERS="spinboro aruba vegas"
 SSHCMD='ssh -o Batchmode=yes -o LogLevel=ERROR'
 ONTAP_STD_ARGS="set -units B; set -showseparator \"#\"; set -showallfields true"
-NTAPHOME="/home/ansible/Projects/netapp-scripts/bu_script"
+NTAPHOME="/home/ansible/Projects/netapp-scripts/bu_script/"
 OUTPUTFILE="/tmp/na_interestingmsgs.$$"
 ERRORCODE=0
 MAILTO="cmoreira@misfirm.com"
